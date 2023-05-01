@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+
+:root {
+    --main-color: rgb(247, 249, 249);
+    --black-color: #0b0202;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+
+
+
+}
+
+*{
+    font-family:'Schibsted Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    
+}
+.body{
+    background-color: var(--black-color);
+    height: 200vh;
+
+}
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    height: auto;
+    z-index: 999;
+    }
+
+.header .logo img {
+  height: 10rem;
+
+}
+
+.header{
+    background-color: rgb(1, 10, 17);
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(rgba(65, 7, 237, 0.067));
+    border-bottom: 0.1rem solid transparent;
+
+}
+.haeder .navbar .active, .header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem ;
+    background-color: transparent;
+}
+
+.home{
+    min-height: 100vh;
+    background: url(../background.png)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+
+}
+
+.home .content h3{
+    font-size: 70px;
+    color: rgb(6, 6, 249);
+    font-weight: bold;
+    display: inline-block;
+    
+    
+
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:#000607 ;
+}
+
+.suggestedPlaces .box-container{
+    display: flex;
+    grid-template-columns: (auto-fit, minmax(30rem, 1fr));
+    column-gap: 1.5rem;
+
+}
+
+.suggestedPlaces .box-container .box{
+    padding: 1.6rem;
+    background-color: rgb(38, 6, 248);
+    border-radius: 4rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: 800px;
+    justify-content: space-between;
+    align-content: normal;
+
+}
+
+.suggestedPlaces .box-container .box img{
+    float: left;
+    height: 250px;
+    width :250px;
+    object-fit: cover;
+
+}
+
+.suggestedPlaces .box-container .box .Location{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
